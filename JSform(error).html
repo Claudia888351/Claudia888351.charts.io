@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form id="biaodan" action="">
+        <input type="text" name="username" id="shuru">
+
+        <!-- 表单重置按钮
+        法一：将重置按钮设为普通按钮（type=“button”） -->
+        <button id="chongzhi" type="button">重置</button>
+        <script>
+            var biaodan = document.getElementById("biaodan")
+            var chongzhi = document.getElementById("chongzhi")
+
+            // 此时给按钮绑定的是点击事件
+            // 给表单绑定的就是重置事件
+            chongzhi.onclick = function () {
+                biaodan.reset();
+                console.log("重置成功")
+            }
+        </script>
+        <!-- 法二，直接将重置按钮的属性设为“重置”（type="reset"） -->
+        <!-- <button id="chongzhi" type="reset">重置</button> -->
+
+        <!-- 表单提交按钮
+        法一：直接用button按钮，因为button默认为type="submit" -->
+        <!-- <button>提交</buttonre> -->
+        
+        <button id="tijiao" >提交</buttonre>
+        <script>
+            var biaodan = document.getElementById("biaodan")
+            // var tijiao = document.getElementById("tijiao")
+
+            // tijiao.onclick = function () {
+            //     biaodan.onsubmit=function(){
+            //         console.log("提交成功")
+            //     }
+            //     console.log("点击成功")
+            // }
+            var username=document.getElementsByName('username')
+            console.log(username)
+
+        </script>
+
+    </form>
+
+    <!-- <script>
+        var biaodan = document.getElementById("biaodan")
+     
+        // biaodan.onsubmit=function(){
+        //     console.log('ok')
+        // }
+
+
+
+    </script> -->
+</body>
+
+</html>

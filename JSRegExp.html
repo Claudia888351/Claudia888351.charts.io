@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <ul id="ul">
+        <li>
+            <ul>
+                <li>ooooo</li>
+                <li>ppppp</li>
+            </ul>
+        </li>
+        <li>nnnn</li>
+        <li>pppp</li>
+    </ul>
+
+
+    <script>
+            // var str="posdjoejd"
+
+            // var res=str.split()
+            // console.log(res)
+
+            var fat=document.getElementById("ul")
+            var fri=fat.children
+            // console.log(fri)
+            // console.log(fri[0].innerHTML)
+            console.log(fat.innerText)
+
+
+        
+
+            var fri1=fat.firstElementChild
+            console.log(fri1)
+
+            var fri2=fat.lastElementChild
+
+            var fri3=fri2.previousElementSibling
+
+            var fri4=fri1.nextElementSibling
+            
+            var b=document.body
+            // console.log(b)
+
+            var html=document.documentElement
+            // console.log(html)
+
+            console.log(typeof fat)
+            // console.log(fat)
+    </script>
+</body>
+</html>
